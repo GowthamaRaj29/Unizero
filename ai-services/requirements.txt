@@ -1,0 +1,11 @@
+fastapi==0.141.1
+uvicorn==0.53.0
+pandas==3.0.6
+rapidfuzz==3.14.6
+anthropic==1.7.0
+pydantic==2.13.5
+python-multipart==0.0.32
+python-dotenv==1.2.3
+requests
+pytest
+sentence-transformers>=3.0,<6

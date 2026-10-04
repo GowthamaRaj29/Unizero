@@ -1,0 +1,29 @@
+1. Install Frontend Dependencies
+powershell
+cd frontend
+npm install
+2. Install Python Dependencies (if new virtual environment)
+powershell
+pip install -r backend/requirements.txt
+pip install -r ai-services/requirements.txt
+3. Start OneRecon
+On Windows, simply run the launcher script from the root folder:
+
+powershell
+.\start-onerecon.bat
+This automatically launches all three microservices in separate windows:
+
+Frontend: http://127.0.0.1:5173
+Backend API: http://127.0.0.1:8000/health
+AI Services: http://127.0.0.1:8001/health
+(Optional) If reconciling the Management Accounting API:
+
+powershell
+python "data/OneRecon_DataSet/Current Data/august/ma_api_server_202608.py"
+🔑 Pre-Configured Test Accounts
+The SQLite database is pre-seeded with accounts for all three roles:
+
+Role	Email	Password	Permissions
+Admin	testinvest@recon	password123	User approvals, audit logs, system roles
+Investigator	invest@recon	password123	Workflow creation, CSV/XML ingestion, mapping, break RCA
+Approver	testapprover@recon	password123	Maker-Checker review, approve/reject resolutions

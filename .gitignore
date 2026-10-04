@@ -1,0 +1,86 @@
+# =========================
+# Node / npm
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+
+# Frontend builds
+dist/
+build/
+.next/
+.nuxt/
+out/
+
+# Frontend cache
+.cache/
+.parcel-cache/
+.eslintcache/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+.jwt-secret
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+venv/
+.venv/
+env/
+
+# =========================
+# Python / App logs
+# =========================
+*.log
+logs/
+# =========================
+# Databases / Runtime
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Testing / Coverage
+# =========================
+coverage/
+htmlcov/
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# macOS
+# =========================
+.DS_Store
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+
+# =========================
+# Bat files
+# =========================
+*.bat
+
+# =========================
+# PDF files
+# =========================
+*.pdf
